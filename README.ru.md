@@ -1,9 +1,17 @@
 <p align="center">
+  <img src="docs/img/logo.png" width="96" height="96" alt="Tolk">
+</p>
+<h1 align="center">Tolk</h1>
+<p align="center">Встречи Teams — в обычные текстовые файлы, из живых субтитров, локально.</p>
+<p align="center">
+  <a href="https://github.com/Ilyakz/tolk/releases/latest"><img src="https://img.shields.io/github/v/release/Ilyakz/tolk?label=версия&color=1f6feb" alt="версия"></a>
+  <img src="https://img.shields.io/badge/Windows-10%20%7C%2011-0078d4" alt="Windows 10 | 11">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-green" alt="Apache-2.0"></a>
+</p>
+<p align="center">
   <a href="https://github.com/Ilyakz/tolk/releases/latest"><b>Скачать последнюю версию</b></a>
   &nbsp;·&nbsp; <a href="README.md">English</a>
 </p>
-
-# Tolk
 
 **Tolk** сохраняет текст ваших встреч в Microsoft Teams. Пока идёт встреча с включёнными живыми
 субтитрами, Tolk записывает в обычный текстовый файл на вашем компьютере всё, что показывают

@@ -1,9 +1,17 @@
 <p align="center">
+  <img src="docs/img/logo.png" width="96" height="96" alt="Tolk">
+</p>
+<h1 align="center">Tolk</h1>
+<p align="center">Your Teams meetings as plain text files — saved from the live captions, locally.</p>
+<p align="center">
+  <a href="https://github.com/Ilyakz/tolk/releases/latest"><img src="https://img.shields.io/github/v/release/Ilyakz/tolk?label=release&color=1f6feb" alt="release"></a>
+  <img src="https://img.shields.io/badge/Windows-10%20%7C%2011-0078d4" alt="Windows 10 | 11">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-green" alt="Apache-2.0"></a>
+</p>
+<p align="center">
   <a href="https://github.com/Ilyakz/tolk/releases/latest"><b>Download the latest version</b></a>
   &nbsp;·&nbsp; <a href="README.ru.md">Русская версия</a>
 </p>
-
-# Tolk
 
 **Tolk** keeps a text record of your Microsoft Teams meetings. While a meeting runs with live
 captions turned on, Tolk saves what the captions show — when, who and what was said — as a plain
