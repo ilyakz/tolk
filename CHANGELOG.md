@@ -2,27 +2,15 @@
 
 ## 1.5.18
 
-**English**
+- Captions are saved while the meeting window is minimized or the whole screen is shared (they used to be lost).
+- No more repeated lines in transcripts.
+- If captions cannot be read, the tray icon shows "needs attention" right away.
 
-- No more runs of repeated lines. When a short line such as "Yes." was shown twice in the captions panel, Tolk could write the lines between the two copies again on every poll — dozens of repeats in a minute. Tolk now finds its place in the panel from the end, checking the line before it too.
-- A short line that someone really says again ("Yes." … "Yes.") is no longer dropped as a repeat.
+---
 
-**Русский**
-
-- Больше никаких серий повторов. Если короткая реплика вроде «Да.» показывалась в панели субтитров дважды, Tolk мог на каждом опросе заново записывать реплики между двумя её копиями — десятки повторов за минуту. Теперь Tolk ищет своё место в панели с конца и сверяет ещё и предыдущую реплику.
-- Короткая реплика, которую действительно сказали ещё раз («Да.» … «Да.»), больше не выбрасывается как повтор.
-
-## 1.5.17
-
-**English**
-
-- No more lost captions while the meeting window is minimized. Teams keeps the captions of a minimized window up to date, but its panel holds only the last ~20 lines, and Tolk used to stop reading while the window was minimized (it took that for a whole-screen share): everything said in the meantime was lost. Tolk now reads the captions whether the window is minimized, covered or in the background.
-- If the captions really cannot be read (the panel is gone from the window), the tray icon shows "needs attention" right away instead of looking like it is saving.
-
-**Русский**
-
-- Субтитры больше не теряются, когда окно встречи свёрнуто. Teams продолжает обновлять субтитры свёрнутого окна, но его панель держит только последние ~20 реплик, а Tolk переставал читать её, пока окно было свёрнуто (принимал это за показ всего экрана), — всё, что говорили в это время, пропадало. Теперь Tolk читает субтитры, свёрнуто ли окно, перекрыто или в фоне.
-- Если субтитры действительно нельзя прочитать (панели нет в окне), значок в трее сразу показывает «нужно внимание», а не делает вид, что сохраняет.
+- Субтитры сохраняются, когда окно встречи свёрнуто или идёт показ всего экрана (раньше терялись).
+- Больше никаких повторяющихся строк в расшифровках.
+- Если субтитры нельзя прочитать, значок в трее сразу показывает «нужно внимание».
 
 ## 1.5.16
 
