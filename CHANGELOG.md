@@ -1,5 +1,17 @@
 # Changes
 
+## 1.5.18
+
+**English**
+
+- No more runs of repeated lines. When a short line such as "Yes." was shown twice in the captions panel, Tolk could write the lines between the two copies again on every poll — dozens of repeats in a minute. Tolk now finds its place in the panel from the end, checking the line before it too.
+- A short line that someone really says again ("Yes." … "Yes.") is no longer dropped as a repeat.
+
+**Русский**
+
+- Больше никаких серий повторов. Если короткая реплика вроде «Да.» показывалась в панели субтитров дважды, Tolk мог на каждом опросе заново записывать реплики между двумя её копиями — десятки повторов за минуту. Теперь Tolk ищет своё место в панели с конца и сверяет ещё и предыдущую реплику.
+- Короткая реплика, которую действительно сказали ещё раз («Да.» … «Да.»), больше не выбрасывается как повтор.
+
 ## 1.5.17
 
 **English**

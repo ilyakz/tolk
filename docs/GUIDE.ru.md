@@ -123,7 +123,7 @@ Tolk сохраняет только живые субтитры. Если вс�
 `SHA256SUMS.txt`:
 
 ```powershell
-Get-FileHash .\Tolk-1.5.17-setup.exe -Algorithm SHA256
+Get-FileHash .\Tolk-1.5.18-setup.exe -Algorithm SHA256
 ```
 
 Лицензионная страница установщика — это условия использования Tolk; при первом запуске Tolk ещё раз
