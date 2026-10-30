@@ -20,25 +20,19 @@ Besides that, Tolk reads only:
 
 - a recording's transcript (`.vtt`) that you import yourself (see below);
 - from the Windows registry: whether Windows keeps Tolk's tray icon in the hidden icons
-  (`HKCU\Control Panel\NotifyIconSettings`), and whether Teams Caption Logger is still installed (its
-  uninstall entry) or starts with Windows (its `TeamsCaptionLogger` value under
-  `...\CurrentVersion\Run`).
+  (`HKCU\Control Panel\NotifyIconSettings`).
 
 ## What Tolk stores, and where
 
 | What | Where | Contents |
 |---|---|---|
 | Transcripts | `%USERPROFILE%\TeamsTranscripts\transcripts` by default, or the folder chosen in Settings → Storage; one `<meeting name>_<date>_<time>.txt` per meeting | The meeting title and start time, then each caption line with its time, the speaker's name as Teams shows it, and the text; pause and resume marks. |
-| Settings | `%APPDATA%\Tolk\settings.json` | Your choices: interface language and theme, transcripts folder and whether meetings move with it, whether you accepted the terms of use, your notice for the meeting chat if you changed it, how long meetings are kept, hiding from screen sharing, update checks on/off and the time of the last check, notifications on/off and which one-time notices were already shown (the last version announced, the hint to pin the icon, the note about Teams Caption Logger), the size and position of the Meetings window, and similar. No meeting text. Settings that Teams Caption Logger used and Tolk does not stay in the file as they were. |
+| Settings | `%APPDATA%\Tolk\settings.json` | Your choices: interface language and theme, transcripts folder and whether meetings move with it, whether you accepted the terms of use, your notice for the meeting chat if you changed it, how long meetings are kept, hiding from screen sharing, update checks on/off and the time of the last check, notifications on/off and which one-time notices were already shown (the last version announced, the hint to pin the icon), the size and position of the Meetings window, and similar. No meeting text. |
 | Logs | `%APPDATA%\Tolk\logs\` (`*.log`, rotated at about 1 MB, two older copies kept) | What Tolk did and when: start and stop, meeting window titles, file names, number of lines saved, each notification (its kind, the meeting's title and whether it was shown), every 10 minutes how many scans of the Teams windows ran and how long they took, errors with the program's error details. **Never what was said or who said it.** |
-| Registry | `HKCU\Software\Tolk` (`TranscriptsDir`, `Language`; `HKLM\Software\Tolk` for an all-users install), and the value `Tolk` under `...\CurrentVersion\Run` if Tolk starts with Windows | The transcripts folder (so that the uninstaller can find your meetings), the installer language, the autostart command. At every start Tolk deletes the `TeamsCaptionLogger` value there (the predecessor's autostart) and, unless Tolk already starts with Windows, adds its own `Tolk` value in its place. |
+| Registry | `HKCU\Software\Tolk` (`TranscriptsDir`, `Language`; `HKLM\Software\Tolk` for an all-users install), and the value `Tolk` under `...\CurrentVersion\Run` if Tolk starts with Windows | The transcripts folder (so that the uninstaller can find your meetings), the installer language, the autostart command. |
 | Update download | `%TEMP%\tolk-update-…` | The downloaded installer, while it is checked and run. |
 
 The portable version stores its settings and logs in the same `%APPDATA%\Tolk` folder.
-
-If Teams Caption Logger, Tolk's predecessor, kept other files next to a transcript, Tolk leaves them
-as they are and treats them as part of that meeting: they move with it to a new folder, are kept as
-long as it is and go to the Recycle Bin with it. Tolk does not show, search or send them.
 
 **The clipboard.** The Meetings window puts on the Windows clipboard only what you ask for: a
 transcript's path (**Copy path**), its text (**Copy text**) or the file itself, for pasting as an
@@ -49,8 +43,7 @@ account. Clear it with Win+V → **Clear all**.
 
 **Notifications.** When a meeting starts or stops being saved, or goes on with its captions off, Tolk
 shows a Windows notification with the meeting's title and the number of lines saved — never what was
-said. Other notifications (a new version, pinning the tray icon, Teams Caption Logger still
-installed) contain no meeting data. Windows itself displays them: depending on your Windows settings
+said. Other notifications (a new version, pinning the tray icon) contain no meeting data. Windows itself displays them: depending on your Windows settings
 the meeting's title can be seen on the screen by anyone near it, and Windows may keep it in its
 notification centre until you clear it. Settings → Captions → **Show notifications** turns them off;
 Windows' own notification settings apply too.
@@ -110,10 +103,6 @@ program — is up to you and the rules of that service and your organisation.
    - `%TEMP%\tolk-update-*` folders, and `%TEMP%\tolk-uia-*.txt` snapshots if you made any;
    - exported files wherever you saved them, and copies you pasted or attached elsewhere;
    - clipboard history (Win+V → **Clear all**).
-4. If you used Teams Caption Logger before: Tolk never changes its files. (**Uninstall** in Settings →
-   General runs that program's own uninstaller, which removes the program and leaves its
-   transcripts, settings and logs.) Its settings and logs are in
-   `%APPDATA%\TeamsCaptionLogger` (older versions: `%USERPROFILE%\TeamsTranscripts\settings.json`).
 
 ## Questions
 

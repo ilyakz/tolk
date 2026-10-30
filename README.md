@@ -98,9 +98,6 @@ The screenshots show a demo build with made-up meetings and names.
 - **Updates** from this page's Releases: Tolk checks once a day (can be turned off) and installs only
   when you choose.
 - Interface in **English and Russian**; light or dark theme, following Windows or as you choose.
-- **Replaces Teams Caption Logger**, Tolk's private predecessor: its settings are taken over and its
-  transcripts stay where they are. If it is still on the computer, Tolk stops it from starting with
-  Windows and offers to uninstall it.
 
 ## Notifications and the tray icon
 
@@ -190,14 +187,6 @@ new installer yourself or Tolk updates itself. To change the mode, run the insta
 **Reinstall for all users** (or **Reinstall for me only**): Tolk is reinstalled in the other mode, and
 your settings and meetings stay.
 
-**Coming from Teams Caption Logger?** The installer closes and removes it. Its transcripts and
-settings are not touched: Tolk keeps using the same transcripts folder and copies the settings on its
-first start. Tolk keeps meetings for 1 year unless you choose otherwise: in the welcome window you
-can pick another period or **Never delete** before you accept the terms, and nothing is deleted
-before that. If Teams Caption Logger stays installed anyway, Tolk removes its autostart at every
-start (and starts with Windows in its place, unless it already does), tells you once in a
-notification, and offers **Uninstall** in Settings → General; its transcripts and settings stay.
-
 **For administrators.** `setup.exe /ALLUSERS` or `/CURRENTUSER` chooses the mode without asking;
 `/SILENT` or `/VERYSILENT` installs without the wizard (an installed copy keeps its mode).
 `Tolk.exe --shutdown` asks a running Tolk to finish the current transcript and exit; the installer
@@ -237,10 +226,6 @@ too if you want them gone.
 | Settings | `%APPDATA%\Tolk\settings.json` |
 | Log | `%APPDATA%\Tolk\logs\tolk.log` (states, times, meeting titles and notifications shown — never what was said) |
 | Program | `Program Files\Tolk` (all users) or `%LOCALAPPDATA%\Programs\Tolk` (just me) |
-
-If Teams Caption Logger kept other files next to a transcript, they stay with it: Tolk moves them to
-a new folder, keeps them as long as the transcript and moves them to the Recycle Bin together with
-it, but does not show them.
 
 A transcript is plain UTF-8 text, one caption per line:
 
