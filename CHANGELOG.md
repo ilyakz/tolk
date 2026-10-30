@@ -1,5 +1,17 @@
 # Changes
 
+## 1.5.17
+
+**English**
+
+- No more lost captions while the meeting window is minimized. Teams keeps the captions of a minimized window up to date, but its panel holds only the last ~20 lines, and Tolk used to stop reading while the window was minimized (it took that for a whole-screen share): everything said in the meantime was lost. Tolk now reads the captions whether the window is minimized, covered or in the background.
+- If the captions really cannot be read (the panel is gone from the window), the tray icon shows "needs attention" right away instead of looking like it is saving.
+
+**Русский**
+
+- Субтитры больше не теряются, когда окно встречи свёрнуто. Teams продолжает обновлять субтитры свёрнутого окна, но его панель держит только последние ~20 реплик, а Tolk переставал читать её, пока окно было свёрнуто (принимал это за показ всего экрана), — всё, что говорили в это время, пропадало. Теперь Tolk читает субтитры, свёрнуто ли окно, перекрыто или в фоне.
+- Если субтитры действительно нельзя прочитать (панели нет в окне), значок в трее сразу показывает «нужно внимание», а не делает вид, что сохраняет.
+
 ## 1.5.16
 
 The first public release of Tolk.

@@ -7,7 +7,7 @@ of its own, and it sends nothing to its authors. It goes online only to check Gi
 Meeting text goes only where you copy, paste or export it yourself. Tolk saves no meetings until you
 accept its terms of use on the first start.
 
-This page describes Tolk 1.5.16.
+This page describes Tolk 1.5.17.
 
 ## What Tolk reads
 
