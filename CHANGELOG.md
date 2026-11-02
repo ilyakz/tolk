@@ -1,5 +1,13 @@
 # Changes
 
+## 1.6.0
+
+- Export a meeting to JSON or to CSV for Excel (in the meeting's menu, next to Markdown and HTML).
+
+---
+
+- Экспорт встречи в JSON и в CSV для Excel (в меню встречи, рядом с Markdown и HTML).
+
 ## 1.5.18
 
 - Captions are saved while the meeting window is minimized or the whole screen is shared (they used to be lost).

@@ -119,7 +119,7 @@ SmartScreen does not know it. Click **More info → Run anyway**. To make sure t
 published here, compare its checksum with `SHA256SUMS.txt`:
 
 ```powershell
-Get-FileHash .\Tolk-1.5.18-setup.exe -Algorithm SHA256
+Get-FileHash .\Tolk-1.6.0-setup.exe -Algorithm SHA256
 ```
 
 The installer shows Tolk's terms of use as its license page; Tolk asks you to accept them once more
