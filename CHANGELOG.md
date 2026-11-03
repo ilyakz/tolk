@@ -2,10 +2,12 @@
 
 ## 1.6.0
 
+- **Tolk for macOS (preview):** a menu-bar app for Apple Silicon, macOS 13+. It turns Teams' captions on by itself.
 - Export a meeting to JSON or to CSV for Excel (in the meeting's menu, next to Markdown and HTML).
 
 ---
 
+- **Tolk для macOS (предварительная версия):** приложение в строке меню для Apple Silicon, macOS 13+. Субтитры Teams включает само.
 - Экспорт встречи в JSON и в CSV для Excel (в меню встречи, рядом с Markdown и HTML).
 
 ## 1.5.18

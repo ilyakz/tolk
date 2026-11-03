@@ -104,6 +104,23 @@ program — is up to you and the rules of that service and your organisation.
    - exported files wherever you saved them, and copies you pasted or attached elsewhere;
    - clipboard history (Win+V → **Clear all**).
 
+## On macOS (preview)
+
+Everything above holds on the Mac too, with these differences:
+
+- **Reading.** Tolk reads the Teams window through the macOS Accessibility interface. macOS asks you to
+  allow it once (System Settings → Privacy & Security → Accessibility); you can take the permission back
+  there at any time. With **Turn Teams captions on automatically** on, Tolk sends Teams its own keyboard
+  shortcut for captions when a call starts without them: the meeting window comes to the front for a
+  moment and the app you were in gets the focus back. Nothing else is pressed or typed.
+- **Where things are.** Settings and logs: `~/Library/Application Support/Tolk`. Meetings:
+  `~/Documents/Tolk` by default. Start at login: `~/Library/LaunchAgents/app.tolk.plist`. Deleted and
+  expired meetings go to the Trash.
+- **Network.** The same update check against this repository's releases; an update is a `.dmg` that
+  Tolk opens in the Finder for you to install.
+- **Deleting everything.** Quit Tolk, move it from Applications to the Trash, delete the two folders
+  and the `.plist` above, and remove Tolk from the Accessibility list.
+
 ## Questions
 
 If something here is unclear or seems wrong, open an issue at
